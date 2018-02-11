@@ -7,7 +7,7 @@ BUILD_DEPENDS="gtar-- py-sphinx"
 
 case `uname -r` in
     6.0)
-        installurl=`grep -E '^installpath' /etc/pkg.conf | sed -e 's/^.*=[[:space:]]*//'`
+        installurl=https://`grep -E '^installpath' /etc/pkg.conf | sed -e 's/^.*=[[:space:]]*//'`/pub/OpenBSD
         ;;
     *)
         installurl=`cat /etc/installurl`
