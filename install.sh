@@ -1,9 +1,11 @@
 #!/bin/sh
 set -e
 
-PORTSDIR="/usr/ports"
+PREFIX="/usr"
+PORTSDIR="${PREFIX}/ports"
 BUILD_DEPENDS="gtar-- py-sphinx"
 
+ftp -o - `cat /etc/installurl`/ports.tar.gz | tar -C ${PREFIX} -zxf -
 while read line; do
     rm -rf "${PORTSDIR}/${line}"
 done < overrides.txt
