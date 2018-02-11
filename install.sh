@@ -2,7 +2,7 @@
 set -e
 
 PORTSDIR="/usr/ports"
-BUILD_DEPENDS="gtar py-sphinx"
+BUILD_DEPENDS="gtar-- py-sphinx"
 
 while read line; do
     rm -rf "${PORTSDIR}/${line}"
