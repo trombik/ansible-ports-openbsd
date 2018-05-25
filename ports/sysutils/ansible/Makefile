@@ -3,7 +3,7 @@
 COMMENT-main =		ssh based config management framework
 COMMENT-html =		offline Ansible documentation in HTML format
 
-MODPY_EGG_VERSION =	2.5.1
+MODPY_EGG_VERSION =	2.5.2
 DISTNAME =		ansible-${MODPY_EGG_VERSION}
 PKGNAME-main =		${PKGNAME}
 PKGNAME-html =		ansible-html-${MODPY_EGG_VERSION}
